@@ -18,7 +18,7 @@ pipeline{
         }
         stage ('upload artifact'){
             steps{
-                sh 'curl --upload-file target/bioMedical-0.0.2-SNAPSHOT.jar -u admin:devops -v http://ec2-44-211-173-95.compute-1.amazonaws.com:8081/repository/noella-repo//'
+                sh 'curl --upload-file target/bioMedical-0.0.2-SNAPSHOT.jar -u admin:devops -v http://ec2-3-87-71-81.compute-1.amazonaws.com:8081//'
             }
         }
     }
