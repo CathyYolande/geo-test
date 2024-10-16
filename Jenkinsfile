@@ -20,7 +20,7 @@ pipeline{
             steps{
                 nexusArtifactUploader artifacts: [[artifactId: 'bioMedical', classifier: '', 
                 file: 'target/bioMedical-0.0.2-SNAPSHOT.jar', type: 'jar']], credentialsId: 'nexusID', groupId: 'com.spring',
-                 nexusUrl: 'ec2-3-87-71-81:8081/', nexusVersion: 'nexus3',
+                 nexusUrl: 'ec2-3-87-71-81:8081', nexusVersion: 'nexus3',
                   protocol: 'http', repository: 'noella-repo', version: '0.0.2-SNAPSHOT'
             }
         }
